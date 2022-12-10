@@ -1,6 +1,9 @@
 import 'package:chat/components/primary_button.dart';
 import 'package:chat/constants.dart';
 import 'package:chat/screens/chats/chats_screen.dart';
+import 'package:chat/screens/main_app.dart';
+import 'package:chat/screens/signinOrSignUp/sign_in_screen.dart';
+import 'package:chat/screens/signinOrSignUp/sign_up_screen.dart';
 import 'package:flutter/material.dart';
 
 class SigninOrSignupScreen extends StatelessWidget {
@@ -21,19 +24,24 @@ class SigninOrSignupScreen extends StatelessWidget {
               ),
               Spacer(),
               PrimaryButton(
-                text: "Sign In",
+                text: "Đăng nhập",
                 press: () => Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => ChatsScreen(),
+                    builder: (context) => SignUpScreen(),
                   ),
                 ),
               ),
               SizedBox(height: kDefaultPadding * 1.5),
               PrimaryButton(
                 color: Theme.of(context).colorScheme.secondary,
-                text: "Sign Up",
-                press: () {},
+                text: "Đăng ký",
+                press: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => SignInScreen(),
+                  ),
+                ),
               ),
               Spacer(flex: 2),
             ],

@@ -17,6 +17,7 @@ class FillOutlineButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialButton(
+      padding: EdgeInsets.symmetric(horizontal: 60, vertical: 10),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(30),
         side: BorderSide(color: Colors.white),

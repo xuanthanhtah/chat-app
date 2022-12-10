@@ -23,38 +23,38 @@ class _ChatsScreenState extends State<ChatsScreen> {
           color: Colors.white,
         ),
       ),
-      bottomNavigationBar: buildBottomNavigationBar(),
+      // bottomNavigationBar: buildBottomNavigationBar(),
     );
   }
 
-  BottomNavigationBar buildBottomNavigationBar() {
-    return BottomNavigationBar(
-      type: BottomNavigationBarType.fixed,
-      currentIndex: _selectedIndex,
-      onTap: (value) {
-        setState(() {
-          _selectedIndex = value;
-        });
-      },
-      items: [
-        BottomNavigationBarItem(icon: Icon(Icons.messenger), label: "Chats"),
-        BottomNavigationBarItem(icon: Icon(Icons.people), label: "People"),
-        BottomNavigationBarItem(icon: Icon(Icons.call), label: "Calls"),
-        BottomNavigationBarItem(
-          icon: CircleAvatar(
-            radius: 14,
-            backgroundImage: AssetImage("assets/images/user_2.png"),
-          ),
-          label: "Profile",
-        ),
-      ],
-    );
-  }
+  // BottomNavigationBar buildBottomNavigationBar() {
+  //   return BottomNavigationBar(
+  //     type: BottomNavigationBarType.fixed,
+  //     currentIndex: _selectedIndex,
+  //     onTap: (value) {
+  //       setState(() {
+  //         _selectedIndex = value;
+  //       });
+  //     },
+  //     items: [
+  //       BottomNavigationBarItem(icon: Icon(Icons.messenger), label: "Chats"),
+  //       BottomNavigationBarItem(icon: Icon(Icons.people), label: "People"),
+  //       // BottomNavigationBarItem(icon: Icon(Icons.call), label: "Calls"),
+  //       BottomNavigationBarItem(
+  //         icon: CircleAvatar(
+  //           radius: 14,
+  //           backgroundImage: AssetImage("assets/images/user_2.png"),
+  //         ),
+  //         label: "Profile",
+  //       ),
+  //     ],
+  //   );
+  // }
 
   AppBar buildAppBar() {
     return AppBar(
       automaticallyImplyLeading: false,
-      title: Text("Chats"),
+      title: Text("Tìm kiếm tin nhắn"),
       actions: [
         IconButton(
           icon: Icon(Icons.search),

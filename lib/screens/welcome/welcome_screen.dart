@@ -13,7 +13,7 @@ class WelcomeScreen extends StatelessWidget {
             Image.asset("assets/images/welcome_image.png"),
             Spacer(flex: 3),
             Text(
-              "Welcome to our freedom \nmessaging app",
+              "Chào mừng bạn đến với \nChat Together",
               textAlign: TextAlign.center,
               style: Theme.of(context)
                   .textTheme
@@ -22,7 +22,7 @@ class WelcomeScreen extends StatelessWidget {
             ),
             Spacer(),
             Text(
-              "Freedom talk any person of your \nmother language.",
+              "Trò chuyện mọi lúc mọi nơi \ncùng bạn bè.",
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: Theme.of(context)
@@ -44,7 +44,7 @@ class WelcomeScreen extends StatelessWidget {
                   child: Row(
                     children: [
                       Text(
-                        "Skip",
+                        "Bỏ qua",
                         style: Theme.of(context).textTheme.bodyText1!.copyWith(
                               color: Theme.of(context)
                                   .textTheme
