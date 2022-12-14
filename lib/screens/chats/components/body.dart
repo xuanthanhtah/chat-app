@@ -12,52 +12,25 @@ class Body extends StatefulWidget {
 }
 
 class _BodyState extends State<Body> {
-  var checked = 0;
-  final tag = <String>[
-    "Tin nhắn gần đây",
-    "Đang hoạt động",
-  ];
-
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
         Container(
-          padding: EdgeInsets.fromLTRB(
-              kDefaultPadding, 0, kDefaultPadding, kDefaultPadding),
-          color: kPrimaryColor,
-          child: ListView.builder(
-            shrinkWrap: true,
-            itemCount: tag.length,
-            itemBuilder: (context, index) => Column(
-              children: [
-                FillOutlineButton(
-                  press: () {
-                    setState(() {
-                      checked = index;
-                    });
-                  },
-                  text: tag[index],
-                  isFilled: checked == index,
-                ),
-              ],
+            // Row(
+            //   children: [
+
+            //     FillOutlineButton(
+            //         press: () {}, text: "Tin nhắn gần đây", isFilled: false),
+            //     SizedBox(width: kDefaultPadding),
+            //     FillOutlineButton(
+            //       press: () {},
+            //       text: "Đang hoạt động",
+            //       isFilled: true,
+            //     ),
+            //   ],
+            // ),
             ),
-          ),
-
-          // Row(
-          //   children: [
-
-          //     FillOutlineButton(
-          //         press: () {}, text: "Tin nhắn gần đây", isFilled: false),
-          //     SizedBox(width: kDefaultPadding),
-          //     FillOutlineButton(
-          //       press: () {},
-          //       text: "Đang hoạt động",
-          //       isFilled: true,
-          //     ),
-          //   ],
-          // ),
-        ),
         Expanded(
           child: ListView.builder(
             itemCount: chatsData.length,

@@ -26,6 +26,7 @@ ThemeData lightThemeData(BuildContext context) {
       selectedIconTheme: IconThemeData(color: kPrimaryColor),
       showUnselectedLabels: true,
     ),
+    dividerColor: Colors.white,
   );
 }
 
@@ -51,6 +52,7 @@ ThemeData darkThemeData(BuildContext context) {
       selectedIconTheme: IconThemeData(color: kPrimaryColor),
       showUnselectedLabels: true,
     ),
+    dividerColor: Colors.black,
   );
 }
 

@@ -1,5 +1,7 @@
 import 'package:chat/constants.dart';
 import 'package:chat/screens/chats/chats_screen.dart';
+import 'package:chat/screens/listfriend/listfriend_screen.dart';
+import 'package:chat/screens/profile/profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
@@ -21,9 +23,8 @@ class _MainAppState extends State<MainApp> {
         index: _currentIndex,
         children: [
           ChatsScreen(),
-          // SavejobApplyJobPage(),
-          // RecruiterPage(),
-          // ProfilePage(),
+          ListFriendScreen(),
+          ProfileScreen(),
         ],
       ),
       bottomNavigationBar: SalomonBottomBar(
